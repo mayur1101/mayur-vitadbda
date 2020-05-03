@@ -1,6 +1,6 @@
 # **AMAZON S3(STORAGE ENGINE)**
 
-<img src="
+<img src="/images/s3.png" width=400>
 
 * s3 is a service in which we can store any type of data.
 * s3 stores the data in the form of bucket which is same as folder in local desktop.
@@ -15,3 +15,10 @@
 * Integration-S3 is easy to integrate with other services available on AWS.
 * Scalability.
 * Migration of Data from Cloud-S3 provides a platform for you to transfer data to the cloud and out.
+
+
+[`CLICK HERE TO SEE STEPS OF BUCKET CREATION`](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html)
+
+[`CLICK HERE TO SEE AWS CLI COMMANDS FOR S3`](https://docs.aws.amazon.com/cli/latest/reference/s3/)
+
+[`CLICK HERE TO SEE S3 COST`](https://www.google.com/search?q=s3+cost&oq=s3+cost&aqs=chrome..69i57j0l7.2109j1j4&sourceid=chrome&ie=UTF-8)
