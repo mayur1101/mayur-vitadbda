@@ -1,6 +1,6 @@
 # **AMAZON S3(STORAGE ENGINE)**
 
-<img src="
+<img src="/images/s3.png" width=400>
 
 * s3 is a service in which we can store any type of data.
 * s3 stores the data in the form of bucket which is same as folder in local desktop.
