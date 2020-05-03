@@ -20,3 +20,5 @@
 [`CLICK HERE TO SEE STEPS OF BUCKET CREATION`](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html)
 
 [`CLICK HERE TO SEE AWS CLI COMMANDS FOR S3`](https://docs.aws.amazon.com/cli/latest/reference/s3/)
+
+[`CLICK HERE TE SEE S3 COST`](https://www.google.com/search?q=s3+cost&oq=s3+cost&aqs=chrome..69i57j0l7.2109j1j4&sourceid=chrome&ie=UTF-8)
