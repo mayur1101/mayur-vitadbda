@@ -1,3 +1,3 @@
 # mayur-vitadbda
 
-<img src="mayur-vitadbda/aws/images/Big-data.jpg" width=500>
+<img src="https://knowledgemanagementdepot.com/wp-content/uploads/2017/12/Big-data-analytics-solutions.jpg" width=500>
