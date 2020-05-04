@@ -1,3 +1,3 @@
 # mayur-vitadbda
 
-<img src="images/Big-data.jpg" width=500>
+<img src="mayur-vitadbda/aws/images/Big-data.jpg" width=500>
