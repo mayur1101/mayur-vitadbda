@@ -1,6 +1,6 @@
 # **AWS CLIENT**
 
-<img src="/iamges/awscli.png">
+<img src="images/awscli.png">
 
 * AWS client is the software like cmd which is used to operate the aws services from the local host.
 * With the use of AWS cli we can delete,modify the servies of aws.
