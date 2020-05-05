@@ -5,6 +5,7 @@
 to start instance we have to pay for it but LAMBDA funtion allows u to store code and it charge you for storage.
 * The code store in LAMBDA is charged when we run the code otherwise there will be no charge to store the code.
 *The charge is on CPU,RAM*TIME of running code.
+<img src="images/lambda.png">
 
 * It gives scalability and parallelization.
 * For eg:-1. first code requires 1GB ram and 1 core cpu.THEN IF WE UPDATE THE CODE NOW IF
