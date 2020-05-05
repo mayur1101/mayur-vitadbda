@@ -2,7 +2,7 @@
 
 * It is a serverless means you dont own server with 0 maintainence,scalability.
 * For eg:-If we write the program in java or python and if we store that program or website in EC2 then to run the code we have 
-to start instance we have to pay for it but LAMBDA funtion allows u to store code and it charge you for storage.
+to start instance we have to pay for it but LAMBDA funtion allows u to store code and it will not charge you for storage.
 * The code store in LAMBDA is charged when we run the code otherwise there will be no charge to store the code.
 *The charge is on CPU,RAM*TIME of running code.
 <img src="images/lambda.png">
