@@ -1,6 +1,6 @@
 # **SETTING S3 BUCKET TRIGGER ON LAMBDA**
 
-### STEP 1:-
+### STEP 1:-CREATE AN IAM ROLE
 <img src="images/l1.png" width=700>
 
 ### STEP 2:-
@@ -18,7 +18,7 @@
 ### STEP 6:-
 <img src="images/l6.png" width=700>
 
-### STEP 7:-
+### STEP 7:-CREATE S3 TRIGGER LAMBDA FUNCTION
 <img src="images/l7.png" width=700>
 
 ### STEP 8:-
@@ -27,7 +27,7 @@
 ### STEP 9:-
 <img src="images/l9.png" width=700>
 
-### STEP 10:-
+### STEP 10:-ATTACH CLOUD WATCH FULL ACCESS POLICY TO IAM ROLE.
 <img src="images/l10.png" width=700>
 
 ### STEP 11:-
@@ -36,7 +36,7 @@
 ### STEP 12:-
 <img src="images/l12.png" width=700>
 
-### STEP 13:-
+### STEP 13:-ADD TRIGGER
 <img src="images/l13.png" width=700>
 
 ### STEP 14:-
@@ -51,7 +51,7 @@
 ### STEP 17:-
 <img src="images/l17.png" width=700>
 
-### STEP 18:-
+### STEP 18:-UPLOAD ONE FILE IN S3 BUCKET
 <img src="images/l18.png" width=700>
 
 ### STEP 19:-
