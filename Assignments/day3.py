@@ -47,16 +47,47 @@
 ####1634 = 14+64+34+44
 ####8208 = 84+24+04+84
 ####9474 = 94+44+74+44
-def check(n):
-    s=0
-    while n!=0:
-        d=n%10
-        s=s+(d*d*d)
-        n=n//10
-    return s
-n=int(input("Enter the number:"))
-c=check(n)
-if c==n:
-    print("narcissistic number")
-else:
-    print("not narcissistic number")
+##def check(n):
+##    s=0
+##    cnt=0
+##    temp=n
+##    while temp!=0:
+##        temp//=10
+##        cnt=cnt+1
+##    if cnt==3:
+##        while n!=0:
+##            d=n%10
+##            s=s+(d*d*d)
+##            n=n//10
+##        return s
+##    elif cnt==4:
+##        while n!=0:
+##            d=n%10
+##            s=s+(d*d*d*d)
+##            n=n//10
+##        return s
+##n=int(input("Enter the number:"))
+##c=check(n)
+##if c==n:
+##    print("narcissistic number")
+##else:
+##    print("not narcissistic number")
+
+##def sum(n,power):
+##    s=0
+##    while n != 0:
+##        d=n%10
+##        s=s+(d**power)
+##        n//=10
+##    return s
+##n=int(input("Enter the number:"))
+##power=len(str(n))
+##temp=n
+##c=sum(n,power)
+##if c==temp:
+##    print("narcissistic number")
+##else:
+##    print("Not Narcissistic number")
+
+
+    
