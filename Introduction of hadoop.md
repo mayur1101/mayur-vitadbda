@@ -1,4 +1,6 @@
 # Introduction to hadoop
+<img src="Images/hadoop logo.png" width=200>
+
 ->It is a apache based open source framework.
 
 ->It is implemented in java.
