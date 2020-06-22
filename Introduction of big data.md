@@ -49,6 +49,55 @@ The overhead costs are determining the profitability of each manufacturer. To ha
 visibility over these costs, big data environments are needed with connected data sources and advanced analytics capabilities.
 
 # Big data challenges
+There are two main chalenges associated with big data i.e.
+
+1)How do we store or manage such a huge volume of data efficiently.
+
+2)How do we process and extract valuable information from this huge huge volume of data within a given time frame.
+
+# Solutions to big data problems
+a)Hold workshops for employees to ensure big data adoptions.
+
+b)Carefully select technology stack.
+
+c)Mind costs and plan for future upscaling.
+
+d)Remember that data isnt 100% accurate but still manage its quality.
+
+e)Never neglect big data security.
+
+# Hadoop Distribution and Vendors
+The three hadoop distribution vendors are:-
+
+### 1)CLOUDERA
+Cloudera is the oldest vendor and it is widely used.It also has max number of clients.
+
+### 2)MAPR
+Mapr is the good open source with direct access NFS.
+
+### 3)HORTONWORKS
+Hortonworks is the free to use software & can be easily downloaded from website.
+
+#### 10 Factors are essential for software hadoop distribution
+1)License
+
+2)Unique features
+
+3)Community
+
+4)Sql
+
+5)Mapreduce
+
+6)App Development
+
+7)Replication mode
+
+8)Architecture
+
+9)Operating system
+
+10)Free to use
 
 
 
