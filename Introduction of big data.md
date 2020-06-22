@@ -99,7 +99,7 @@ Hortonworks is the free to use software & can be easily downloaded from website.
 
 10)Free to use
 
-<img src="/images/difference hadoop vendors.jpg" width=400>
+<img src="Images/difference of hadoop vendors.png" width=600>
 
 
 
