@@ -1,3 +1,3 @@
-# mayur-vitadbda
+# Big Data Technology
 
-<img src="Images/hadoop logo.png" width=500>
+<img src="Images/big data logo.jpg" width=500>
