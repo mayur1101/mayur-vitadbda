@@ -63,4 +63,4 @@ April 2009 : Won the minute sort by sorting 500 GB in 59 seconds on 1,400 nodes 
 
 July 2013 : Gray sort by sorting at a rate of 1.42 Terabytes per minute.
 
-[`Click here to see history of hadoop`] (https://youtu.be/JMmlc7SNh7o)
+[`Click here to see history of hadoop`](https://youtu.be/JMmlc7SNh7o)
