@@ -34,3 +34,15 @@ centralized systems buta at the beginning after sometime it is cost effective.
 #### 5)Efficiency
 Distributed systems allow breaking complkex problems/data into smaller pieces and have multiple computers work on them in parallel,
 which can help in cut down on the time needed to solve/computer those problems.
+
+### Disadvantages of Distributed computing:-
+#### 1)Complexity
+Distributed computing systems are difficult to deploy,maintain and debug.
+
+#### 2)Higher initial costs
+The deployment cost of a distribution is higher than a single system.Increased processing overhead due to additional computation 
+and exchange of information also adds up to overall cost.
+
+#### 3)Security concerns
+Data access can be controlled easily in centralized computing but in distributed computing the security is difficult.
+
