@@ -5,7 +5,7 @@ Create EMR Hadoop cluster in aws.SSH open through MOBAXTERM app.
 
 ### Step 2:-
 Download lab file in AWS EMR.
->  wget  https://dbda-labs.s3.amazonaws.com/labs.zip
+> wget  https://dbda-labs.s3.amazonaws.com/labs.zip
 
 <img src="Images/pic1.png" width=500>
 
@@ -13,6 +13,7 @@ Download lab file in AWS EMR.
 Unzip the downloaded zip file.
 >  unzip   labs.zip 
 
+<img src="
 ## 1) View the hdfs dfs Command
 > hdfs dfs 
 
