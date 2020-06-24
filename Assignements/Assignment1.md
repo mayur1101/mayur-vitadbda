@@ -13,7 +13,8 @@ Download lab file in AWS EMR.
 Unzip the downloaded zip file.
 >  unzip   labs.zip 
 
-<img src="
+<img src="Images/pic2.png" width=500>
+
 ## 1) View the hdfs dfs Command
 > hdfs dfs 
 
