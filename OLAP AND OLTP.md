@@ -1,5 +1,5 @@
 # OLAP AND OLTP:-
-<img src="/Images/OLAP AND OLTP.png" width=600>
+<img src="/Images/OLAP AND OLTP.jpg" width=600>
 
 - From Buisness process data is send to data warehouse and vicea versa.
 - The managers,analysts which are present to analyze the data which is done through data warehouse comes in OLAP and Day to Day transactions comes under OLTP.
