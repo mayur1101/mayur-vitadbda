@@ -1,7 +1,27 @@
 # What is big data?
-Big Data is a massive volume of both structured and unstructured data that is so large
-it is difficult to process using traditional database and software techniques.
-In most enterprise scenarios the volume of data is too big or it moves too fast or it exceeds current processing capacity.
+- The term big data came from computational science.Specially it is used to describe a scenario where the volume and the variety of the data overwhelm the existing tools to store and process it.
+- In 2001 the industry analyst DOUGH LANEY described big data using the three V’s. (Volume , Velocity , Variety)
+Volume :
+- It refers to the magnitude of the data that is being generated and collected.It is increasing at a faster rate from TB to PB.
+
+### Challenges
+- Storage cost
+- Filtering and finding relevant and valuable information in large quantity of data that often contains much information that is not valuable.
+- The ability to analyse data quickly enough in order to maximize business value today and next just next quarter or next year.
+
+#### Variety :
+- It refers to different types of data that are being generated and captured.They extend beyond structured data and fall under the category of semi-structured and unstructured data.
+- Structured data : The data that can be organized using a predefined data  model are known as structured data. (eg : RDBMS)
+- Unstructured data : The data cannot be organized using pre defined data models. (eg : Video,Text,Audio)
+- Semi-structured data : The data that fall between the category of structured and unstructured data. (Partial data model) (eg : XML,Web Pages)
+Challenges :
+- How to gather,link,match,clean and transform data across systems.
+- How to connect and co relate data relationship and hierarchy in order to extract business value from data.
+
+#### Velocity :
+- It refers to the rate of generation of data. (eg : Data generated through mobile apps)
+Challenges :
+- Not reacting quickly enough to benefit from the data(eg : Data could be used to create a dashboard that could warn of a security breach or machine failure).
 
 # Industry use cases
 
