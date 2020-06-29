@@ -30,7 +30,7 @@ a)Suppliers now have the choice to share their production data with their partne
 complete transparency and a highly effective communication channel for both parties. This way the manufacturer can see 
 exactly whether the supplier is delayed with production or just in time, to then adjust all the related processes and avoid waiting times.
 
-b)Having supplier production and quality information available can also provide all data and insight needed for better risk management. 
+b)Having supplier production and quality information available can also provide all data and insight needed forr better risk management. 
 Supplier dependencies are quantifiable and allow the manufacturer to make fact-based decisions when it comes to strategic risk management.
 
 ### 2.Build to order configurations
