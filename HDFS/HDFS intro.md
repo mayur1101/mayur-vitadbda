@@ -6,7 +6,13 @@
 
 <img src="/Images/hdfs.png" width=400>
 
-- Normal traditional systems has default blocksize of 4-6kb and HDFS default blocksize is 64MB.
+- Normal traditional systems has default blocksize of 4-6kb and HDFS default blocksize is 128MB and of Apache default blocksize is 75 MB.
+
+- FORMULA FOR CALCULATING THE TOTAL BLOCKS OF FILE.
+- Total no. of blocks=File size/block size
+- Replication factor is made for the failure.The default replication factor is 3 and it can be configurable.
+- So the total number of boxes will be:-
+Total no. of blocks=File blocks*Replication factor.
 
 ## Advantages of HDFS:-
 - HDFS can be implemented on community hardware.
