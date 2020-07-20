@@ -18,50 +18,34 @@
 # Brief history of hadoop
 History of Hadoop had started in the year 2002 with the project Apache Nutch. Hadoop was created by Doug Cutting, the creator of Apache Lucene, the widely used text search library. Hadoop has its origins in Apache Nutch, an open source web search engine which itself is a part of Lucene Project.
 
-#### 2002 – 2004
-Apache Nutch was started in the year 2002 by Doug Cutting which is an effort to build an open source web search engine based on Lucene and Java for the search and index component. Nutch was based on sort/merge processing. In June 2003, it was successfully demonstrated on 4 nodes by crawling 100 million pages. However they realised that their architecture wouldn’t scale to billions of pages on web. There comes the help with the publication of a paper in 2003 that described the architecture of the Google’s Distributed Filesystem, called GFS which has been used in production at Google which would solve their storage needs for the very large files generated as part of the web crawling and indexing process.
+- Journey of hadoop starts from 2005.But before that also it is described.As teh google has published the research paper on google file system.On the basis of this paper hadoop is made.
 
-#### 2004 – 2006
-In the year 2004, they started writing the open source implementation called Nutch Distributed Filesystem (NDFS). In the same year Google published a paper that introduces MapReduce to the world. Early in the year 2005, the Nutch developers had a working MapReduce Implementation in Nutch and by the middle of that year all the major Nutch algorithms had been ported using the MapReduce and NDFS (Nutch Distributed FileSystem). In Febraury, 2006 they moved out of Nutch to form an independent subproject of Lucene called Hadoop.
+- Hadoop is made by doug cutting in 2005 Earlier they are working in google in web crawling.They used to retrieve data and the main problem is to store data because the 
+data is in terabytes.Therefore he made HDFS and MAP REDUCE.He says that HDFS is the storage engine and we can store any type of data that is structured non structured any data.
+To process that data he ,ade processing framework named MAP REDUCE.
 
-2004 : Initial versions of  what is now Hadoop Distributed FileSystem and MapReduce implemented by Doug Cutting and Mike Cafarella.
-December 2005 : Nutch ported to a new framework. Hadoop runs reliably on 20 nodes.
+- Why name hadoop?because doug cutting child have a toy of elephant and of yellow colour and his boy used to say that toy as a hadoop hadoop thats why cutting gave thename hadoop.
 
-#### 2006 – 2008
-Doug Cutting joined Yahoo! in the year 2006, which provided him the dedicated team and resources to turn Hadoop in to a system that ran at web scale. Hadoop was made Apache’s top level project in the year 2008.
+- The main reason that made hadoop popular is distributed system(Backbone of hadoop) and parallel processing.
 
-February 2006 : Apache Hadoop project officially started to support the standalone development of MapReduce and HDFS.
+- In 2008-2010 it became very popular because of facebook has the license of oracle it is very costly.So facebook came to the solution for this as a hadoop cluster.They made hadoop cluster popular.
 
-February 2006 : Adoption of Hadoop by Yahoo! Grid Team.
+- Earlier also it is used by YAHOO to store their personalized content(The content which we see through adds and the news i.e. what we search we get the data as per that).
 
-April 2006 : Sort benchmark ( 10 GB/node ) run on 188 nodes in 47.9.
+- Yahoo had made 200 node cluster.
 
-May 2006 : Yahoo! set up a Hadoop 300 nodes research cluster.
+- Map reduce is based on pure java programming.And java experts are required to made map reduce programs.
 
-May 2006 : Sort benchmark run on 500 nodes in 42 hours ( better hardware than April benchmark )
+- Yahoo researched for skilled set in their company and they see the unix linux system resources are there.So what they have done they hire the java expert team and they make 
+a framework called PIG.
 
-October 2006 : Research cluster reaches 600 nodes.
+- So pig now is used to convert the linux style commands into the map reduce.
 
-December 2006 : Sort benchmark run on 20 nodes in 1.8 hours, 100 nodes in 3.3 hours, 500 nodes in 5.2 hours, 900 nodes in 7.8 hours.
+- Facebook has also has problem because they r using oracle thats why they have expertise of sql.Then they have also hire java experts and they made HIVE system.Now they can
+write sql query in hive and hive converts it into map reduce.Therefore hive is used for structured data.
 
-January 2007 : Research cluster reaches 900 nodes.
-
-April 2007 : Research clusters – two cluster of 1000 nodes.
-
-April 2008 : Won 1 Terabyte sort benchmark in 208 seconds on 990 nodes.
-
-October 2008 : Loading 10 Terabytes of data per day into research clusters.
-
-#### 2008 – now
-After 2008 there is a full time development that is going on. There are many releases of Hadoop, you can find them here.
-
-March 2009 : 17 clusters with a total of 24,000 nodes.
-
-April 2009 : Won the minute sort by sorting 500 GB in 59 seconds on 1,400 nodes and 100 TB sort in 173 minutes on 3,400 nodes.
-
-2011 : Yahoo was running its search engine across 42,000 nodes.
-
-July 2013 : Gray sort by sorting at a rate of 1.42 Terabytes per minute.
+- So as we see that in hadoop ecosystems all applications have the name of animals so to keep safe that is not to try something officially change the data of aother applications
+There is a zookeeper that manages the privacy of applications in ecosystem.
 
 [`Click here to see history of hadoop`](https://youtu.be/JMmlc7SNh7o)
 
