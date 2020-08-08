@@ -1,0 +1,197 @@
+Authenticating with public key "Imported-Openssh-Key: C:\\Users\\praz1\\key\\vita-dbda-2020.pem"
+     +--------------------------------------------------------------------+
+     ¦                        • MobaXterm 20.2 •                          ¦
+     ¦            (SSH client, X-server and networking tools)             ¦
+     ¦                                                                    ¦
+     ¦ ? SSH session to hadoop@100.25.218.51                              ¦
+     ¦   • SSH compression : ?                                            ¦
+     ¦   • SSH-browser     : ?                                            ¦
+     ¦   • X11-forwarding  : ?  (disabled or not supported by server)     ¦
+     ¦   • DISPLAY         : 192.168.0.104:0.0                            ¦
+     ¦                                                                    ¦
+     ¦ ? For more info, ctrl+click on help or visit our website           ¦
+     +--------------------------------------------------------------------+
+
+Last login: Thu Aug  6 05:20:33 2020
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+28 package(s) needed for security, out of 82 available
+Run "sudo yum update" to apply all updates.
+
+EEEEEEEEEEEEEEEEEEEE MMMMMMMM           MMMMMMMM RRRRRRRRRRRRRRR
+E::::::::::::::::::E M:::::::M         M:::::::M R::::::::::::::R
+EE:::::EEEEEEEEE:::E M::::::::M       M::::::::M R:::::RRRRRR:::::R
+  E::::E       EEEEE M:::::::::M     M:::::::::M RR::::R      R::::R
+  E::::E             M::::::M:::M   M:::M::::::M   R:::R      R::::R
+  E:::::EEEEEEEEEE   M:::::M M:::M M:::M M:::::M   R:::RRRRRR:::::R
+  E::::::::::::::E   M:::::M  M:::M:::M  M:::::M   R:::::::::::RR
+  E:::::EEEEEEEEEE   M:::::M   M:::::M   M:::::M   R:::RRRRRR::::R
+  E::::E             M:::::M    M:::M    M:::::M   R:::R      R::::R
+  E::::E       EEEEE M:::::M     MMM     M:::::M   R:::R      R::::R
+EE:::::EEEEEEEE::::E M:::::M             M:::::M   R:::R      R::::R
+E::::::::::::::::::E M:::::M             M:::::M RR::::R      R::::R
+EEEEEEEEEEEEEEEEEEEE MMMMMMM             MMMMMMM RRRRRRR      RRRRRR
+
+[hadoop@ip-172-31-18-143 ~]$ pyspark
+Python 3.7.6 (default, Feb 26 2020, 20:54:15)
+[GCC 7.3.1 20180712 (Red Hat 7.3.1-6)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+20/08/06 05:24:16 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+20/08/06 05:24:38 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Attempted to request executors before the AM has registered!
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 2.4.5-amzn-0
+      /_/
+
+Using Python version 3.7.6 (default, Feb 26 2020 20:54:15)
+SparkSession available as 'spark'.
+>>> viewDF = spark.read.text("s3a://bhavesh007/spark-labs/spark-labs/data/wiki-pageviews.txt")
+>>> viewDF.printSchema()
+root
+ |-- value: string (nullable = true)
+
+>>> viewDF.limit(5).show()
++------------------+
+|             value|
++------------------+
+|  aa Main_Page 3 0|
+|  aa Main_page 1 0|
+|  aa User:Savh 1 0|
+|  aa Wikipedia 1 0|
+|aa.b User:Savh 1 0|
++------------------+
+
+>>> from pyspark.sql.functions import *
+>>> splitLineDF = viewDF.select(split(viewDF.value, "\\s+").alias("splitLine"))
+>>> splitLineDF.limit(5).show()
++--------------------+
+|           splitLine|
++--------------------+
+|[aa, Main_Page, 3...|
+|[aa, Main_page, 1...|
+|[aa, User:Savh, 1...|
+|[aa, Wikipedia, 1...|
+|[aa.b, User:Savh,...|
++--------------------+
+
+>>> splitLineDF.printSchema()
+root
+ |-- splitLine: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+
+>>> splitLineDF.limit(5).show(truncate = False)
++-----------------------+
+|splitLine              |
++-----------------------+
+|[aa, Main_Page, 3, 0]  |
+|[aa, Main_page, 1, 0]  |
+|[aa, User:Savh, 1, 0]  |
+|[aa, Wikipedia, 1, 0]  |
+|[aa.b, User:Savh, 1, 0]|
++-----------------------+
+
+>>> viewsWithSchemaDF = splitLineDF.select(splitLineDF.splitLine[0].alias("domain"), splitLineDF.splitLine[1].alias("pageName"), splitLineDF.splitLine[2].cast("integer").alias("viewCount"), splitLineDF.splitLine[3].cast("long").alias("size"))
+>>> viewsWithSchemaDF.printSchema()
+root
+ |-- domain: string (nullable = true)
+ |-- pageName: string (nullable = true)
+ |-- viewCount: integer (nullable = true)
+ |-- size: long (nullable = true)
+
+>>> viewsWithSchemaDF.limit(5).show()
++------+---------+---------+----+
+|domain| pageName|viewCount|size|
++------+---------+---------+----+
+|    aa|Main_Page|        3|   0|
+|    aa|Main_page|        1|   0|
+|    aa|User:Savh|        1|   0|
+|    aa|Wikipedia|        1|   0|
+|  aa.b|User:Savh|        1|   0|
++------+---------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.viewCount > 500).limit(5).show()
++------+---------------+---------+----+
+|domain|       pageName|viewCount|size|
++------+---------------+---------+----+
+|    ar|              -|      686|   0|
+|    ar|??????_????????|      720|   0|
+|    ar|        ???:???|      850|   0|
+|  ar.m|              -|     2086|   0|
+|  ar.m|??????_????????|     5024|   0|
++------+---------------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.domain == "en").filter(viewsWithSchemaDF.viewCount > 500).limit(5).show()
++------+-------------------+---------+----+
+|domain|           pageName|viewCount|size|
++------+-------------------+---------+----+
+|    en|                  -|     6492|   0|
+|    en|       2017_in_film|     1004|   0|
+|    en|            404.php|    34859|   0|
+|    en|89th_Academy_Awards|     3276|   0|
+|    en|              AMGTV|     1049|   0|
++------+-------------------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.domain == "en").orderBy(viewsWithSchemaDF.viewCount.desc()).limit(5).show()
++------+--------------+---------+----+
+|domain|      pageName|viewCount|size|
++------+--------------+---------+----+
+|    en|     Main_Page|   248511|   0|
+|    en|Special:Search|    69630|   0|
+|    en|          Rice|    47233|   0|
+|    en|       404.php|    34859|   0|
+|    en|   John_Batman|     6632|   0|
++------+--------------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.domain == "en").orderBy(viewsWithSchemaDF.viewCount, ascending=False).limit(5).show()
++------+--------------+---------+----+
+|domain|      pageName|viewCount|size|
++------+--------------+---------+----+
+|    en|     Main_Page|   248511|   0|
+|    en|Special:Search|    69630|   0|
+|    en|          Rice|    47233|   0|
+|    en|       404.php|    34859|   0|
+|    en|   John_Batman|     6632|   0|
++------+--------------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.domain == "en").orderBy("viewCount", ascending=False).limit(5).show()
++------+--------------+---------+----+
+|domain|      pageName|viewCount|size|
++------+--------------+---------+----+
+|    en|     Main_Page|   248511|   0|
+|    en|Special:Search|    69630|   0|
+|    en|          Rice|    47233|   0|
+|    en|       404.php|    34859|   0|
+|    en|   John_Batman|     6632|   0|
++------+--------------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.domain == "en").filter(~viewsWithSchemaDF.pageName.like("%:%")).orderBy(viewsWithSchemaDF.viewCount.desc()).limit(5).show()
++------+-----------+---------+----+
+|domain|   pageName|viewCount|size|
++------+-----------+---------+----+
+|    en|  Main_Page|   248511|   0|
+|    en|       Rice|    47233|   0|
+|    en|    404.php|    34859|   0|
+|    en|John_Batman|     6632|   0|
+|    en|          -|     6492|   0|
++------+-----------+---------+----+
+
+>>> viewsWithSchemaDF.filter(viewsWithSchemaDF.domain == "en").filter(viewsWithSchemaDF.pageName.like("%:%")).orderBy(viewsWithSchemaDF.viewCount.desc()).limit(5).show()
++------+--------------------+---------+----+
+|domain|            pageName|viewCount|size|
++------+--------------------+---------+----+
+|    en|      Special:Search|    69630|   0|
+|    en|        Special:Book|     4796|   0|
+|    en|Special:RecentCha...|     3376|   0|
+|    en|  Special:LinkSearch|     3169|   0|
+|    en|   Special:Watchlist|     3156|   0|
++------+--------------------+---------+----+
+
+>>>
