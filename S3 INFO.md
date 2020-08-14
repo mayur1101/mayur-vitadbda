@@ -12,7 +12,7 @@
 ## ADVANTAGES OF S3 BUCKET
 * The object storage enables corporations to store, analyse and retrieve large data from different platforms such as websites, mobile apps, customised company applications among other devices.
 * Simple to Use
-* Enhances Security-S3 supports the transfer of data on SSL.
+* Enhances Security-S3 supports the transfer of data on SSL.SSL IS secure sockets layer is most widely deployed cryptographic protool to provide security over internet communications.
 * Reliable and Durable Data Storage-S3 is reliable since it stores data across different devices and facilities to improve data accessibility.
 * Integration-S3 is easy to integrate with other services available on AWS.
 * Scalability.
