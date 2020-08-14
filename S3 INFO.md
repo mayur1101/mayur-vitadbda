@@ -5,12 +5,14 @@
 * s3 is a service in which we can store any type of data.
 * s3 stores the data in the form of bucket which is same as folder in local desktop.
 * we can make folders and files as many we want  in the bucket.
-*  In a single bucket, you can store any number of  objects, and at the same time you can write or delete an object in a bucket.
+* In a single bucket, you can store any number of  objects, and at the same time you can write or delete an object in a bucket.
+* Bucket name should be identical arount the globe i.e. the bucket name we choose have no one used in the whole world otherwise it will give u error while creating bucket.
+* By default for one aws account user can create 100 buckets we can increase the size by changing the configuration and max. size is 1000 buckets.
 
 ## ADVANTAGES OF S3 BUCKET
 * The object storage enables corporations to store, analyse and retrieve large data from different platforms such as websites, mobile apps, customised company applications among other devices.
 * Simple to Use
-* Enhances Security-S3 supports the transfer of data on SSL.
+* Enhances Security-S3 supports the transfer of data on SSL.SSL IS secure sockets layer is most widely deployed cryptographic protool to provide security over internet communications.
 * Reliable and Durable Data Storage-S3 is reliable since it stores data across different devices and facilities to improve data accessibility.
 * Integration-S3 is easy to integrate with other services available on AWS.
 * Scalability.
