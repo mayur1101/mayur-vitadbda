@@ -1,0 +1,213 @@
+1)What is python?
+->1)High Level Programming language:
+  Python is high level programming language(Human understandable language,machine independent,detects the errors immediately) and hence it is programmer friendly language.Python was developed by Guido Van Rossam in 1989 while working at National Research Institute at Netherlands.
+
+
+  2)Python is Interpreted:
+  Python is processed at runtime by the interpreter. We do not need to compile our program before executing it.
+
+ 3)Dynamically Typed:
+ In Python we are not required to declare type for variables. Whenever we are assigning
+ the value, based on value, type will be allocated automatically.Hence Python is considered
+ as dynamically typed language.
+ But Java, C etc are Statically Typed Languages b'z we have to provide type at the beginning
+ only.
+
+ 4)Supports both procedure oriented and object oriented language:
+ Difference between procedure oriented and object oriented programming Language?
+ In procedure oriented programming their is no security just because access modifier(public,protected and private) concept is not their.Everything is visible to other  program.
+ So that other program can access the information directly.
+ In object oriented programming it is completely secure.As a programmer we have to implement the
+ security.
+ (Public Access Modifier==>All data members and member functions of a class are public by default.
+
+ Protected Access Modifier==>The members of a class that are declared protected are only accessible to a class derived from it. 
+ Data members of a class are declared protected by adding a single underscore ‘_’ symbol before the data member of that class.
+
+ Private Access Modifier==>
+ The members of a class that are declared private are accessible within the class only, 
+ private access modifier is the most secure access modifier. 
+ Data members of a class are declared private by adding a double underscore ‘__’ symbol before the data member of that class.
+ )
+
+ 5)Platform Independent:
+ Once we write a Python program,it can run on any platform(on all operating system) without rewriting once again.
+ Internally python is responsible to convert into machine understandable form.
+
+ 6)Extensive Library:
+ Python has a rich inbuilt library.
+ Being a programmer we can use this library directly.
+
+#####################################################################################################################################
+2)How python is different from Java?
+-->
+Python                                              Java
+*Less code require to write.                     *More line of code needs to write
+e.g.print("Hellow World")                       public class HelloWorld
+                                                {
+                                                   public static void main(String[] args)
+                                                   {
+                                                     System.out.println("Hello world")
+                                                    }
+                                                 }
+
+
+*No need to compile the code.                    *Need to compile the code before running it.
+Internally Python interpreter
+will take care that compilation.                    
+
+
+
+*Dynamically Typed programming language          *statically typed programming language
+
+
+*Supports both procedure oriented and            *Supports only object oriented programming language.
+object oriented programming language.
+
+
+#########################################################################################################################################3
+3)How python is different from c language.
+-->
+Python                                                           C language
+*Python is procedural and object oriented                *C is procedural oriented programming language.       
+programming language.
+
+*In python no need of variable declaration               *On the otherhand in c variables are need to be declare
+for its use.                                              before using it in code.
+
+*Python is rich in buildin functions.                    *C language has limited number of builtin functions as compared 
+                                                          to python language.
+
+*Python is the interpreted language.                     *C is the compiled language.
+
+
+############################################################################################################################################
+4)What are applications of python?
+-->We can use everywhere.But the most common important application areas are:-
+*For developing Desktop and web based applications.
+e.g.-Youtube,Instagram,dropbox,Quora.
+*For devloping AI applications.
+*For data analysis applications.
+*For developing games.
+*For machine learning.etc...
+
+############################################################################################################################################
+5)What are oops?
+->OOPS stands for object oriented programming system.When we talk about oops we talk about development triangle.Triangle has i/p,process and o/p.In normal programming
+ language the flow we think is i/p then process and what will be the o/p.that means o/p is result of process on I/p.This is more often procedural oriented language thinking.In oops we do reverse i.e we think what is needed? then what process can get this? then What input needed?
+e.g:-1)In company we give the project that is output but ours i.e programmers job is to get the input from that that exactly oops concept.
+     2)If we want to order food from restaurant then we think first that we want food.then process i.e what we want to east and from where we will order then finally          i/p i.e we call zomato to order food.
+
+#############################################################################################################################################
+6)Features of oops?
+->
+a)Encapsulation
+b)Abstraction
+c)inheritance
+d)Polymorphism
+
+a)Encapsulation:-Encapsulation is combining method along with the data.
+b)Abstraction:-Abstraction is a process in which data is accessable through the methods of the class i.e data is made private and methods are publically accessable.
+  Advantage of abstraction it gives needed information without delivering unwanted information or complexity of implementation.
+c)Inheritance:-It is an ability to create something new by taking properties of existing one.
+  Advantage:-
+   code reusability,
+   Faster development,
+   Standards to be followed,foe eg.we see most of people in world that they are using whatsapp for chat and for file transfer they use telegram as telegram can also do    chating here comes the standard of whatsapp because of that we use.
+   enhancement in terms of improvement.i.e.we evolve over the time not the preexisting one.
+for eg:-I am a man i have my properties which is inherited from human beacuse all men and women are human i.e. we inherit some properties of human but also we have our own properties.
+d)Polymorphism:-Ability to exists in multiple forms.
+for eg:-Water-Which has many forms that is when we heat it evaporates when we cool then becomes solid and water dont have colour but when we give colour it changes the colour.
+Best example is overload and override.
+
+###############################################################################################################################################
+7)What is class and object?
+->
+Class                                           Object
+*Class is virtual concept                *Object is physical concept.
+*It is an idea                           *It is an entity.
+*It provides framework                   *It provides implementation
+*It has properties.                      *It has values.
+*It has opeartions.                      *It has methods.
+
+for eg:-We take mobile we have os,camera,processor,ram.when we say 
+	mobile ->samsung i.e class
+	but features os,camera,ram,camera are the class in which properties are defind.
+
+##################################################################################################################################################
+8)Scope resolution
+->Scope resolution defines the life of attributes in the memory.
+a)local var.
+b)Instance variable.
+c)Global variable. 
+
+a)local variable:Local variable can be accessed anywhere in the method,loop.
+b)Instance variables:Instance variables can be used with every object created.
+c)Global variable:Can be accessed anywhere in the module.
+
+###################################################################################################################################################
+9)Difference between java oops and python oops
+->
+Java OOPS                                                Python OOPS
+*In java whenever the class is loaded               *In python variables are declared at run time i.e called
+then the variables are declare with default          late binding.
+initial value i.e. null. 
+*It uses 'This' variable for referencing the	    *It uses 'self' variable for referencing current object. 
+current object.
+
+###################################################################################################################################################
+10)What is setattr and getattr?
+->It is the python methods which is used when we have to initialize the instance member if we dont want to set with the methods then we can do 
+that with setattr() and getattr().setattr() will set the attributes and getattr() will return the specified object attributes value.
+Syntax:-
+setattr(object,'member',value)
+We can also set new instance member to the object with value it is accepted.
+getattr(object,'member',defaultvalue)
+If the member is not present in member then defaultvalue is returned.
+
+#################################################################################################################################################
+11)can we create class without body?
+->Yes,we can using PASS keyword.
+for eg:
+class Human:
+	pass
+
+##################################################################################################################################################
+12)Is python have static keyword?What is the static membership?
+->In python static keyword is not there but static membership is there.It is called as class variable.Class variable can access anywhere in the file.
+
+###################################################################################################################################################
+13)What is method overloading.
+->By default every function written in python is overloadable beacuse it doesnot define the sp[ecific datatype by default it can work with whatever
+ datatype you gonna pass.
+for eg:-If we take 2 functions in the same class with the same name but different arguments lets say in 1st method we add 2 args and in 2nd we pass
+3 args.then as python is interpreted it will memorize only latest function 1st function will be removed from memory.and if we try to access 1st 
+method we will get an error.
+
+####################################################################################################################################################
+14)What is method overriding?
+->Overriding is the method having same name in parent class which is overridden by child class method.with the help of super keyword parent class 
+method we can access.
+for eg:-If we have two classes name weapon and sword and sword is the child class of weapon.If both have method strike and if we create an object of 
+child class sword and if we access the strike method of obj then it will execute the sword class function.and if we want to access weapon class function
+then super method is used.
+
+####################################################################################################################################################
+15)What is super in python?
+->super() is the inbuilt function used to access the method or properties of parent class or siblings. 
+
+###################################################################################################################################################
+16)Difference between method overloading and method overriding?
+-> Method overloading                                                 Method overriding
+*Method overloading is done within same class.              *Method overriding is done in different class.
+*super() method is not used in overloading.                 *super() method is used to access parent class method. 
+*We cannot access overloaded class beacuse of               *We can access overrided method. 
+interpreted.  
+*Inheritance may or may not be required.                    *Inheritance is must required.
+*It is a compile time polymorphism.                          *It is runtime polymorphism.
+
+
+
+1)What is packing and unpacking in python.
+2)What is diff between sort and sorted?
+
