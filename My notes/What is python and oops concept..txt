@@ -1,9 +1,11 @@
 1)What is python?
 ->1)High Level Programming language:
-  Python is high level programming language(Human understandable language,machine independent,detects the errors immediately) and hence it is programmer friendly language.Python was developed by Guido Van Rossam in 1989 while working at National Research Institute at Netherlands.
+Python is high level programming language(Human understandable language,machine independent,detects the errors immediately) 
+and hence it is programmer friendly language.Python was developed by Guido Van Rossam in 1989 while working at National Research
+Institute at Netherlands.
 
 
-  2)Python is Interpreted:
+ 2)Python is Interpreted:
   Python is processed at runtime by the interpreter. We do not need to compile our program before executing it.
 
  3)Dynamically Typed:
@@ -15,7 +17,8 @@
 
  4)Supports both procedure oriented and object oriented language:
  Difference between procedure oriented and object oriented programming Language?
- In procedure oriented programming their is no security just because access modifier(public,protected and private) concept is not their.Everything is visible to other  program.
+ In procedure oriented programming their is no security just because access modifier(public,protected and private) 
+ concept is not their.Everything is visible to other  program.
  So that other program can access the information directly.
  In object oriented programming it is completely secure.As a programmer we have to implement the
  security.
