@@ -1,13 +1,14 @@
 # What is big data?
 - The term big data came from computational science.Specially it is used to describe a scenario where the volume and the variety of the data overwhelm the existing tools to store and process it.
 - In 2001 the industry analyst DOUGH LANEY described big data using the three V’s. (Volume , Velocity , Variety)
-Volume :
-- It refers to the magnitude of the data that is being generated and collected.It is increasing at a faster rate from TB to PB.
 
 ### Challenges
 - Storage cost
 - Filtering and finding relevant and valuable information in large quantity of data that often contains much information that is not valuable.
 - The ability to analyse data quickly enough in order to maximize business value today and next just next quarter or next year.
+
+#### Volume :
+- It refers to the magnitude of the data that is being generated and collected.It is increasing at a faster rate from TB to PB.
 
 #### Variety :
 - It refers to different types of data that are being generated and captured.They extend beyond structured data and fall under the category of semi-structured and unstructured data.
