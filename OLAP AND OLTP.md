@@ -24,3 +24,9 @@ and in which season on that basis the product can be stored in warehouse accordi
 
 ## OLTP(Online Transaction Processing)
 - It is characterized by large number of short online transactions(INSERT,UPDATE,DELETE).
+
+**OLAP**                                                                 **OLTP**
+1)OLAP standsfor online analytical process                1)OLTP stands for online transactional process.
+2)OLAP operations are done on denormalized data.          2)OLTP operations are done in normalized data.
+3)OLAP uses select statement to query on datawarehouse.   3)OLTP uses insert,update,delete operations frequently on db.
+4)OLAP is done for buisness analytics.                    4)OLTP is done on web application.
