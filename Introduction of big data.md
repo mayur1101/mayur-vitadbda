@@ -94,7 +94,8 @@ The three hadoop distribution vendors are:-
 Cloudera is the oldest vendor and it is widely used.It also has max number of clients.
 
 ### 2)MAPR
-Mapr is the good open source with direct access NFS.
+Mapr is the good open source with direct access NFS.NFS is Network file system.This distributed file system 
+protocol allows a user on a client computer to access files over a network in the same way they would access a local storage file.
 
 ### 3)HORTONWORKS
 Hortonworks is the free to use software & can be easily downloaded from website.
