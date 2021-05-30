@@ -1,0 +1,28 @@
+1.To clone existing repository into your system.
+git clone <repo_url>
+
+2.Command to see the list of branches of repository.
+git branch --list
+
+3.Steps to create new branch.
+git checkout -b <new-branchname> <existing-branchname>
+git push --set-upstream origin <new-branchname>
+
+4.To switch to other branch
+git checkout <branch-name>
+
+5.To see on which branch is currently on 
+git status
+
+6.Push the files to github repository branch.
+->Go to clone repository in local pc.
+git checkout <branch-name>
+->Add the files we want to push on git repository.
+git add -A
+git commit -m "Comment"
+git push
+
+7.delete a git branch.
+->If u are on same branch then switch to other branch using checkout
+git branch -d <branch-name>
+git push origin :<branch-name>
